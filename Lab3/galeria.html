@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Language" content="pl" />
+		<meta name="Author" content="Bartosz Kowalski" />
+		<title>Największe budynki świata</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>NAJWIĘKSZE BUDYNKI ŚWIATA</h1>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="ranking.html">Ranking</a>
+                <a href="ciekawostki.html">Ciekawostki</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="js.html">JS</a>
+                <a href="jq.html">JQ</a>     
+            </nav>
+        </header>
+
+        <h2 style="text-align: center; font-size: 40px;">
+            <b><i>Galeria</i></b>
+        </h2>
+
+        <main>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="img/burj.png" alt="Burj Khalifa" />
+                    <p>Burj Khalifa - Dubaj, Zjednoczone Emiraty Arabskie</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Merdeka-118.png" alt="Merdeka 118" />
+                    <p>Merdeka 118 - Kuala Lumpur, Malezja</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/shangtower.png" alt="Shanghai Tower" />
+                    <p>Shanghai Tower - Szanghaj, Chiny</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Abraj_Al_Bait.png" alt="Abraj Al-Bait Clock Tower" />
+                    <p>Abraj Al-Bait Clock Tower - Mekka, Arabia Saudyjska</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/ping.png" alt="Ping An Finance Centre" />
+                    <p>Ping An Finance Centre - Shenzhen, Chiny</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/china117.png" alt="China 117 Tower" />
+                    <p>China 117 Tower - Tiencin, Chiny</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/lotte.png" alt="Lotte World Tower" />
+                    <p>Lotte World Tower - Seul, Korea Południowa</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/tradecenter.png" alt="One World Trade Center" />
+                    <p>One World Trade Center - Nowy Jork, Stany Zjednoczone</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/ctf.png" alt="Guangzhou CTF Finance Centre" />
+                    <p>Guangzhou CTF Finance Centre - Kanton, Chiny</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/tradecenter.png" alt="Tianjin CTF Finance Center" />
+                    <p>Tianjin CTF Finance Center - Tiencin, Chiny</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/zun.png" alt="China Zun" />
+                    <p>China Zun - Pekin, Chiny</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/taipei.png" alt="China Zun" />
+                    <p>Taipei 101 - Tajpej, Tajwan</p>
+                </div>
+            </div>
+        </main>
+
+        </main>
+
+        <footer>
+            <u>Największe budynki świata wersja 1.2<u>
+        </footer>
+
+        <script>
+            $(".gallery-item img").hover(
+                function() {
+                    $(this).animate({
+                        height: "+=40px"
+                    }, 300);
+                },
+                function() {
+                    $(this).animate({
+                        height: "-=40px"
+                    }, 300);
+                }
+            );
+        </script>
+
+    </body>
+
+</html>
