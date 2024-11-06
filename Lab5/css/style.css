@@ -8,10 +8,12 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     background-color: saddlebrown;
     padding: 20px 0;
+    text-align: center;
 }
 
 h1 {
