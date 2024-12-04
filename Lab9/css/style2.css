@@ -1,0 +1,113 @@
+.admin-panel {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #4b3b2e;
+}
+
+.admin-panel h2 {
+    color: #5a4328;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.admin-panel form {
+    background-color: saddlebrown;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.admin-panel form input[type="text"],
+.admin-panel form input[type="password"],
+.admin-panel form input[type="checkbox"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff8e1;
+    color: #4b3b2e;
+}
+
+.admin-panel form textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff8e1;
+    color: #4b3b2e;
+    resize: vertical;
+}
+
+.admin-panel form input[type="submit"] {
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.admin-panel form input[type="submit"]:hover {
+    background-color: #a57036;
+}
+
+.admin-panel table {
+    background-color: #fff;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-panel table th,
+.admin-panel table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-panel table th {
+    background-color: #8b5a2b;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.admin-panel table tr:nth-child(even) {
+    background-color: #f9f6f2;
+}
+
+.admin-panel table tr:nth-child(odd) {
+    background-color: #fdfaf5;
+}
+
+.admin-panel table tr:hover {
+    background-color: #ffe4c4;
+}
+
+
+
+
