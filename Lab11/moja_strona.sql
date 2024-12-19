@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 14, 2024 at 03:28 PM
+-- Generation Time: Dec 19, 2024 at 01:59 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -38,15 +38,8 @@ CREATE TABLE `kategorie` (
 --
 
 INSERT INTO `kategorie` (`id`, `matka`, `nazwa`) VALUES
-(1, 0, 'Makiety i modele budynków'),
-(2, 1, 'Wieżowce'),
-(3, 1, 'Stadiony'),
-(4, 1, 'Świątynie'),
-(5, 0, 'Książki i albumy'),
-(6, 5, 'Albumy fotograficzne'),
-(7, 5, 'Przewodniki'),
-(8, 0, 'Zabawki i gry'),
-(9, 8, 'Klocki konstrukcyjne');
+(1, 0, 'Makiety budynków'),
+(2, 1, 'Wieżowce');
 
 -- --------------------------------------------------------
 
@@ -75,8 +68,38 @@ INSERT INTO `page_list` (`id`, `page_title`, `page_content`, `status`, `alias`) 
 (6, 'js', '<main>\r\n    <h2 style=\"text-align: center; margin-bottom: 20px; font-size: 40px;\">\r\n        <b><i>Wybierz kolor tła</i></b>\r\n    </h2>\r\n\r\n    <form method=\"post\" name=\"background\" class=\"background-form\">\r\n        <input type=\"button\" onmouseover=\"changeColor(this, \'#deb887\')\" onmouseout=\"changeColor(this, \'#ffffff\')\" value=\"oryginalny\" onclick=\"changeBackground(\'#deb887\')\">\r\n        <input type=\"button\" onmouseover=\"changeColor(this, \'#FFFF00\')\" onmouseout=\"changeColor(this, \'#ffffff\')\" value=\"żółty\" onclick=\"changeBackground(\'#FFFF00\')\">\r\n        <input type=\"button\" onmouseover=\"changeColor(this, \'#000000\')\" onmouseout=\"changeColor(this, \'#ffffff\')\" value=\"czarny\" onclick=\"changeBackground(\'#000000\')\">\r\n        <input type=\"button\" onmouseover=\"changeColor(this, \'#FFFFFF\')\" onmouseout=\"changeColor(this, \'#ffffff\')\" value=\"biały\" onclick=\"changeBackground(\'#FFFFFF\')\">\r\n        <input type=\"button\" onmouseover=\"changeColor(this, \'#00FF00\')\" onmouseout=\"changeColor(this, \'#ffffff\')\" value=\"zielony\" onclick=\"changeBackground(\'#00FF00\')\">\r\n        <input type=\"button\" onmouseover=\"changeColor(this, \'#0000FF\')\" onmouseout=\"changeColor(this, \'#ffffff\')\" value=\"niebieski\" onclick=\"changeBackground(\'#0000FF\')\">\r\n        <input type=\"button\" onmouseover=\"changeColor(this, \'#FF8000\')\" onmouseout=\"changeColor(this, \'#ffffff\')\" value=\"pomarańczowy\" onclick=\"changeBackground(\'#FF8000\')\">\r\n        <input type=\"button\" onmouseover=\"changeColor(this, \'#c0c0c0\')\" onmouseout=\"changeColor(this, \'#ffffff\')\" value=\"szary\" onclick=\"changeBackground(\'#c0c0c0\')\">\r\n        <input type=\"button\" onmouseover=\"changeColor(this, \'#FF0000\')\" onmouseout=\"changeColor(this, \'#ffffff\')\" value=\"czerwony\" onclick=\"changeBackground(\'#FF0000\')\">\r\n    </form>\r\n    <div id=\"time\">\r\n        <div id=\"zegarek\"></div>\r\n        <div id=\"data\"></div>\r\n    </div>\r\n</main>', 1, 'js'),
 (7, 'jq', '<main>\r\n    <div id=\"animacjaTestowa1\" class=\"test-block\">Kliknij, a się powiększę</div>\r\n\r\n    <div id=\"animacjaTestowa2\" class=\"test-block\">Najedź kursorem, a się powiększę</div>\r\n\r\n    <div id=\"animacjaTestowa3\" class=\"test-block\">Klikaj, abym urósł</div>\r\n    \r\n    <script>\r\n        $(\"#animacjaTestowa1\").on(\"click\", function(){\r\n            $(this).animate({\r\n                width: \"500px\",\r\n                opacity: 0.4,\r\n                fontSize: \"3em\",\r\n                borderWidth: \"10px\"\r\n            }, 1500);\r\n        });\r\n    \r\n    \r\n        $(\"#animacjaTestowa2\").on(\"mouseover\", function(){\r\n            $(this).animate({\r\n                width: 300\r\n            }, 800);\r\n        }).on(\"mouseout\", function(){\r\n            $(this).animate({\r\n                width: 200\r\n            }, 800);\r\n        });\r\n    \r\n        $(\"#animacjaTestowa3\").on(\"click\", function() {\r\n            if (!$(this).is(\":animated\")) {\r\n                $(this).animate({\r\n                    width: \"+=50\",\r\n                    height: \"+=10\",\r\n                    opacity: \"+=0.1\"\r\n                }, {\r\n                    duration: 3000\r\n                });\r\n            }\r\n        });\r\n    </script>\r\n</main>', 1, 'jq'),
 (8, 'filmy', '<main>\r\n    <h2 style=\"text-align: center; margin-bottom: 20px; font-size: 40px;\">\r\n        <b><i>Filmy</i></b>\r\n    </h2>\r\n\r\n    <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/12f6n_n13EI?si=LqiMLsmtV-hiLzmv\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\r\n\r\n    <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/56L1ZVOtw6A?si=KVDrAo1e1jsulcFS\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\r\n\r\n    <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ejmCR0IRzPQ?si=8JdYo51ctli1Aq3t\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\r\n</main>', 1, 'filmy'),
-(9, 'admin', '', 1, 'admin'),
+(9, 'admin', '<?php\r\n\r\n// Sprawdzenie, czy użytkownik jest na stronie panelu administracyjnego\r\nif ($_GET[\"idp\"] == \"9\") {\r\n    echo \"<div class=\"admin-panel\">\";\r\n\r\n    // Sprawdzenie, czy użytkownik jest zalogowany\r\n    if ($_SESSION[\"is_logged\"] == 0) {\r\n        // Przetwarzanie formularza logowania\r\n        PrzetwarzanieFormularza();\r\n\r\n        // Wyświetlenie formularza logowania, jeśli użytkownik nie jest zalogowany\r\n        if ($_SESSION[\"is_logged\"] == 0) {\r\n            echo FormularzLogowania();\r\n        }\r\n    }\r\n\r\n    // Jeżeli użytkownik jest zalogowany\r\n    if ($_SESSION[\"is_logged\"] == 1) {\r\n        // Wyświetlenie opcji w panelu administracyjnym, jeśli nie wybrano konkretnej akcji\r\n        if (!isset($_GET[\"action\"])) {\r\n            echo \"\r\n            <h1>Panel CMS</h1>\r\n            <br>\r\n            <div class=\"admin-options\">\r\n                <a href=\"index.php?idp=9&action=pages\">Zarządzaj podstronami</a>\r\n                <br><br>\r\n                <a href=\"index.php?idp=9&action=categories\">Zarządzaj kategoriami</a>\r\n                <br><br>\r\n                <a href=\"index.php?idp=9&action=products\">Zarządzaj produktami</a>\r\n            </div>\";\r\n        }\r\n\r\n        // Sekcja zarządzania kategoriami\r\n        if ($_GET[\"action\"] == \"categories\") {\r\n            echo \"\r\n            <h1>Zarządzaj kategoriami</h1>\r\n            <br>\r\n            <div class=\"topnav\">\r\n                <a href=\"index.php?idp=9&action=categories&subcategory=list\">Lista kategorii</a>\r\n                <br><br>\r\n                <a href=\"index.php?idp=9&action=categories&subcategory=add\">Dodaj kategorię</a>\r\n                <br><br>\r\n            </div>\";\r\n\r\n            // Inicjalizacja obiektu do zarządzania kategoriami\r\n            $kategorieManager = new ZarzadzajKategoriami($link);\r\n\r\n            // Przetwarzanie formularzy zarządzania kategoriami\r\n            $kategorieManager->PrzetwarzajFormularze();\r\n\r\n            // Obsługa podkategorii\r\n            if ($_GET[\"subcategory\"] == \"list\") {\r\n                $kategorieManager->PokazKategorie();\r\n            } elseif ($_GET[\"subcategory\"] == \"add\") {\r\n                $kategorieManager->FormDodajKategorie();\r\n            } elseif ($_GET[\"subcategory\"] == \"edit\" && isset($_GET[\"id\"])) {\r\n                $kategorieManager->FormEdytujKategorie();\r\n            } elseif ($_GET[\"subcategory\"] == \"delete\" && isset($_GET[\"id\"])) {\r\n                $kategorieManager->UsunKategorie(intval($_GET[\"id\"]));\r\n                echo \"<p style=\"color:green;\">Kategoria została usunięta.</p>\";\r\n                echo \"<a href=\"index.php?idp=9&action=categories&subcategory=list\">Powrót do listy kategorii</a>\";\r\n            }\r\n        }\r\n\r\n        // Sekcja zarządzania produktami\r\n        if ($_GET[\"action\"] == \"products\") {\r\n            echo \"\r\n            <h1>Zarządzaj produktami</h1>\r\n            <br>\r\n            <div class=\"topnav\">\r\n                <a href=\"index.php?idp=9&action=products&subcategory=list\">Lista produktów</a>\r\n                <br><br>\r\n                <a href=\"index.php?idp=9&action=products&subcategory=add\">Dodaj produkt</a>\r\n                <br><br>\r\n            </div>\";\r\n\r\n            // Inicjalizacja obiektu do zarządzania produktami\r\n            $produktyManager = new ZarzadzajProduktami($link);\r\n\r\n            // Przetwarzanie formularzy zarządzania produktami\r\n            $produktyManager->PrzetwarzajFormularze();\r\n\r\n            // Obsługa podkategorii\r\n            if ($_GET[\"subcategory\"] == \"list\") {\r\n                $produktyManager->PokazProdukty();\r\n            } elseif ($_GET[\"subcategory\"] == \"add\") {\r\n                $produktyManager->FormDodajProdukt();\r\n            } elseif ($_GET[\"subcategory\"] == \"edit\" && isset($_GET[\"id\"])) {\r\n                $produktyManager->FormEdytujProdukt();\r\n            } elseif ($_GET[\"subcategory\"] == \"delete\" && isset($_GET[\"id\"])) {\r\n                $produktyManager->UsunProdukt(intval($_GET[\"id\"]));\r\n                echo \"<p style=\"color:green;\">Produkt został usunięty.</p>\";\r\n                echo \"<a href=\"index.php?idp=9&action=products&subcategory=list\">Powrót do listy produktów</a>\";\r\n            }\r\n        }\r\n\r\n        // Sekcja zarządzania podstronami\r\n        if ($_GET[\"action\"] == \"pages\") {\r\n            echo \"\r\n            <h1>Zarządzaj podstronami</h1>\r\n            <br>\r\n            <div class=\"topnav\">\r\n                <a href=\"index.php?idp=9&action=pages&subcategory=list\">Lista podstron</a>\r\n                <br><br>\r\n                <a href=\"index.php?idp=9&action=pages&subcategory=add\">Dodaj nową podstronę</a>\r\n                <br><br>\r\n            </div>\";\r\n\r\n            // Wyświetlenie listy podstron\r\n            if ($_GET[\"subcategory\"] == \"list\") {\r\n                ListaPodstron();\r\n            } elseif ($_GET[\"subcategory\"] == \"add\") {\r\n                echo DodajNowaPodstrone();\r\n            }\r\n\r\n            // Przetwarzanie edycji i dodawania podstron\r\n            PrzetwarzajEdycje();\r\n            PrzetwarzajDodanie();\r\n        }\r\n    }\r\n}\r\n?>\r\n', 1, 'admin'),
 (10, 'kontakt_php', '', 1, 'kontakt_php');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `produkty`
+--
+
+CREATE TABLE `produkty` (
+  `id` int(11) NOT NULL,
+  `tytul` varchar(255) NOT NULL,
+  `opis` text NOT NULL,
+  `data_utworzenia` date NOT NULL,
+  `data_modyfikacji` date NOT NULL,
+  `data_wygasniecia` date NOT NULL,
+  `cena_netto` decimal(10,2) NOT NULL,
+  `vat` int(11) NOT NULL,
+  `ilosc` int(11) NOT NULL,
+  `status` enum('dostępny','niedostępny','wycofany','przedsprzedaż') NOT NULL DEFAULT 'dostępny',
+  `kategoria_id` int(11) DEFAULT NULL,
+  `gabaryt` varchar(50) NOT NULL,
+  `zdjecie` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `produkty`
+--
+
+INSERT INTO `produkty` (`id`, `tytul`, `opis`, `data_utworzenia`, `data_modyfikacji`, `data_wygasniecia`, `cena_netto`, `vat`, `ilosc`, `status`, `kategoria_id`, `gabaryt`, `zdjecie`) VALUES
+(4, 'Notre Dame', 'Francuzki budynek', '2024-12-02', '2024-12-18', '2024-12-24', 20000.00, 3000, 1, 'niedostępny', 1, '30', 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Cath%C3%A9drale_Notre-Dame_de_Paris%2C_20_March_2014.jpg'),
+(5, 'Camp Nou', 'sdfdssaa', '2024-12-31', '2024-12-01', '2024-12-17', 111.00, 12, 4, 'wycofany', 1, '21', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Camp_Nou_aerial_%28cropped%29.jpg/1200px-Camp_Nou_aerial_%28cropped%29.jpg');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -96,6 +119,13 @@ ALTER TABLE `page_list`
   ADD UNIQUE KEY `alias` (`alias`);
 
 --
+-- Indeksy dla tabeli `produkty`
+--
+ALTER TABLE `produkty`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_kategoria_id` (`kategoria_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -103,13 +133,30 @@ ALTER TABLE `page_list`
 -- AUTO_INCREMENT for table `kategorie`
 --
 ALTER TABLE `kategorie`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `page_list`
 --
 ALTER TABLE `page_list`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `produkty`
+--
+ALTER TABLE `produkty`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `produkty`
+--
+ALTER TABLE `produkty`
+  ADD CONSTRAINT `fk_kategoria_id` FOREIGN KEY (`kategoria_id`) REFERENCES `kategorie` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `produkty_ibfk_1` FOREIGN KEY (`kategoria_id`) REFERENCES `kategorie` (`id`) ON DELETE SET NULL;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
