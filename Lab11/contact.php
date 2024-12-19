@@ -1,7 +1,4 @@
 <?php
-//bartek.web
-//Uwmprojekt
-
 
 // Dołączenie pliku konfiguracyjnego
 include("cfg.php");
