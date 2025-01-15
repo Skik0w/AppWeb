@@ -1,0 +1,193 @@
+.sklep-container, .koszyk-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #f5deb3;
+    border-radius: 8px;
+}
+
+.sklep-tytul, .koszyk-tytul {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #8b4513;
+}
+
+.sklep-przyciski {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.sklep-przycisk-koszyka, .sklep-przycisk-powrotu {
+    display: inline-block;
+    background-color: #8b4513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sklep-przycisk-koszyka:hover, .sklep-przycisk-powrotu:hover {
+    background-color: #a0522d;
+}
+
+.sklep-kategorie-grid, .sklep-produkty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.sklep-kategoria-glowna, .sklep-kategoria, .sklep-produkt {
+    border: 1px solid #d2b48c;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.sklep-kategoria-glowna {
+    background-color: #deb887;
+}
+
+.sklep-kategoria-glowna:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sklep-kategoria:hover, .sklep-produkt:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sklep-produkt-zdjecie {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.sklep-kategoria-tytul, .sklep-produkt-tytul {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #8b4513;
+}
+
+.sklep-produkt-opis {
+    font-size: 0.85em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.sklep-produkt-waga, .sklep-produkt-ilosc {
+    font-size: 0.9em;
+    color: #6b4226;
+    margin-bottom: 5px;
+}
+
+.sklep-produkt-cena {
+    font-size: 1em;
+    color: #228b22;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sklep-produkt-przycisk {
+    display: inline-block;
+    background-color: #8b4513;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.sklep-produkt-przycisk:hover {
+    background-color: #a0522d;
+}
+
+
+.koszyk-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f0e1c9;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.koszyk-tabela th {
+    background-color: #deb887;
+    color: #8b4513;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.koszyk-tabela td {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #6b4226;
+    border-bottom: 1px solid #d2b48c;
+}
+
+.koszyk-tabela tr:nth-child(even) {
+    background-color: #f9eac7;
+}
+
+.koszyk-tabela tr:hover {
+    background-color: #e7d3b8;
+}
+
+.koszyk-brak-produktow {
+    text-align: center;
+    font-size: 1em;
+    color: #8b4513;
+    margin: 20px 0;
+}
+
+.koszyk-suma {
+    text-align: right;
+    font-size: 1.1em;
+    margin-top: 15px;
+    color: #333;
+    background-color: #f0e1c9;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.koszyk-usun-przycisk {
+    display: inline-block;
+    background-color: #8b4513;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.koszyk-usun-przycisk:hover {
+    background-color: #a0522d;
+}
+
+.sklep-container, .koszyk-container {
+    margin-top: 40px;
+}

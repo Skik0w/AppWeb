@@ -1,0 +1,22 @@
+<main>
+    <div class="index">
+        <h2>Witaj na stronie o największych budynkach świata!</h2>
+        <img src="img/burjkhalifa.png" alt="Burj Khalifa">
+        <p>Na naszej stronie zobaczysz najbardziej <i><b>imponujące</b></i> budowle na świecie, <i><b>wiele</b></i> ciekawostek oraz <i><b>niesamowite</b></i> zdjęcia.</p>
+    </div>
+
+    <script>
+        $(".index img").hover(
+            function() {
+                $(this).animate({
+                    height: "+=70px"
+                }, 300);
+            },
+            function() {
+                $(this).animate({
+                    height: "-=70px"
+                }, 300);
+            }
+        );
+    </script>
+</main>
