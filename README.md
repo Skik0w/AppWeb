@@ -1,4 +1,4 @@
-# ProjAppWeb-main – Web Application with CMS and Online Store
+Web Application with CMS and Online Store
 
 ## Overview
 
